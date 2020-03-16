@@ -1,4 +1,6 @@
-  
+
+#Sam Martinelli and Nick Ehsani cowrote this script for modified euclidian algorwithm
+print("Make A > B")
 a = int(input ("input a: "))
 b = int(input ("input b: "))
 r = 0
@@ -38,3 +40,25 @@ while (R[k] != 0):
 	
 
 print("Output is: ", k, "  ", R[k-1],"   ", Q[k-1],"       ", P[k-1])
+
+
+# all the ps here are really Qs
+if (k%2==0):
+	negonepower = 1
+	answer = (negonepower * Q[k-1])
+else:
+	negonepower = -1
+	answer = (negonepower * Q[k-1]) + a
+
+if (R[k-1] != 1):
+	print("DNE THERE IS NO SOLUTION")
+
+else: 
+	print("the answer is ", answer)
+
+	
+	
+
+
+
+
