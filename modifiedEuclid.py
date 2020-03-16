@@ -53,7 +53,7 @@ if (R[k-1] != 1):
 	print("DNE THERE IS NO SOLUTION")
 
 else: 
-	print("the answer is ", answer)
+	print("the inverse of b under a is ", answer)
 
 	
 	
