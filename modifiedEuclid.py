@@ -1,5 +1,4 @@
 
-#Sam Martinelli and Nick Ehsani cowrote this script for modified euclidian algorwithm
 print("Make A > B")
 a = int(input ("input a: "))
 b = int(input ("input b: "))
@@ -16,11 +15,11 @@ Q = []
 R.insert(-1,b)
 R.insert(-2,a)
 
-P.insert(-2,0)
 P.insert(-1,1)
+P.insert(-2,0)
 
-Q.insert(-2,1)
 Q.insert(-1,0)
+Q.insert(-2,1)
 
 print("k                 r(k)             a(k)        p(k)               q(k)")
 print("-2              ",R[-2],"            (none)            0              1")
@@ -39,16 +38,16 @@ while (R[k] != 0):
 
 	
 
-print("Output is: ", k, "  ", R[k-1],"   ", Q[k-1],"       ", P[k-1])
+print("Output is: ", k, "  ", R[k-1],"   ", P[k-1],"       ", Q[k-1])
 
 
 # all the ps here are really Qs
 if (k%2==0):
 	negonepower = 1
-	answer = (negonepower * Q[k-1])
+	answer = (negonepower * P[k-1])
 else:
 	negonepower = -1
-	answer = (negonepower * Q[k-1]) + a
+	answer = (negonepower * P[k-1]) + a
 
 if (R[k-1] != 1):
 	print("DNE THERE IS NO SOLUTION")
